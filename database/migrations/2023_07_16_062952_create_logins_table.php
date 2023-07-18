@@ -11,9 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('logins', function (Blueprint $table) {
-            $table->id();
+        Schema::create('forum_users', function (Blueprint $table) {
+            // $table->id();
             $table->timestamps();
+            $table->string('identity')->primary();          //主键
+            $table->foreignId('name')->cascadeOnDelete();    //外键
+            $table->char('sex',1);
+            $table->string('phone',11);
+            $table->string('email');
+            $table->string('password',60);                 //哈希密码
+            $table->string('blog_number',5);               //拥有的博客数量
         });
     }
 
