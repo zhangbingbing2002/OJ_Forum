@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\login;
+use App\Models\Register;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Illuminate\Http\RedirectResponse;
 use Inertia\Response;
 
-class LoginController extends Controller
+class RegisterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class LoginController extends Controller
     public function index():Response
     {
         //
-        return Inertia::render('Login/Index', [
+        return Inertia::render('Login/Register', [
 
             //
 
@@ -43,7 +43,7 @@ class LoginController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(login $login)
+    public function show(Register $register)
     {
         //
     }
@@ -51,7 +51,7 @@ class LoginController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(login $login)
+    public function edit(Register $register)
     {
         //
     }
@@ -59,7 +59,7 @@ class LoginController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, login $login)
+    public function update(Request $request, Register $register)
     {
         //
     }
@@ -67,7 +67,7 @@ class LoginController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(login $login)
+    public function destroy(Register $register)
     {
         //
     }

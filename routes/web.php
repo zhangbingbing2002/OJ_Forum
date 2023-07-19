@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -27,11 +28,19 @@ Route::get('/', function () {
 });
 
 Route::resource('Login', LoginController::class)
-    ->only(['index', 'store']);
+    ->only(['index']);
+// Route::resource('Login.Register', RegisterController::class)
+//     ->only(['index', 'store']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::get('forum_register', [RegisterController::class, 'create'])
+->name('forum_register');
+
+Route::post('forum_register', [RegisterController::class, 'index']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
