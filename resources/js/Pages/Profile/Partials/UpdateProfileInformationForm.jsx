@@ -9,7 +9,9 @@ export default function UpdateProfileInformation({ mustVerifyEmail, status, clas
     const user = usePage().props.auth.user;
 
     const { data, setData, patch, errors, processing, recentlySuccessful } = useForm({
-        name: user.name,
+        username: user.username,
+        sex: user.sex,
+        phone: user.phone,
         email: user.email,
     });
 
@@ -22,7 +24,7 @@ export default function UpdateProfileInformation({ mustVerifyEmail, status, clas
     return (
         <section className={className}>
             <header>
-                <h2 className="text-lg font-medium text-gray-900">Profile Information</h2>
+                <h2 className="text-lg font-medium text-gray-900">个人信息</h2>
 
                 <p className="mt-1 text-sm text-gray-600">
                     Update your account's profile information and email address.
@@ -30,20 +32,53 @@ export default function UpdateProfileInformation({ mustVerifyEmail, status, clas
             </header>
 
             <form onSubmit={submit} className="mt-6 space-y-6">
-                <div>
-                    <InputLabel htmlFor="name" value="Name" />
+            <div>
+                    <InputLabel htmlFor="username" value="Username" />
 
                     <TextInput
-                        id="name"
+                        id="username"
+                        name="username"
+                        value={data.username}
                         className="mt-1 block w-full"
-                        value={data.name}
-                        onChange={(e) => setData('name', e.target.value)}
+                        autoComplete="username"
+                        isFocused={true}
+                        onChange={(e) => setData('username', e.target.value)}
                         required
-                        isFocused
-                        autoComplete="name"
                     />
 
-                    <InputError className="mt-2" message={errors.name} />
+                    <InputError message={errors.username} className="mt-2" />
+                </div>
+
+                <div>
+                    <InputLabel htmlFor="sex" value="Sex" />
+
+                    <TextInput
+                        id="sex"
+                        className="mt-1 block w-full"
+                        value={data.sex}
+                        onChange={(e) => setData('sex', e.target.value)}
+                        required
+                        isFocused
+                        autoComplete="sex"
+                    />
+
+                    <InputError className="mt-2" message={errors.sex} />
+                </div>
+
+                <div>
+                    <InputLabel htmlFor="phone" value="Phone" />
+
+                    <TextInput
+                        id="phone"
+                        className="mt-1 block w-full"
+                        value={data.phone}
+                        onChange={(e) => setData('phone', e.target.value)}
+                        required
+                        isFocused
+                        autoComplete="phone"
+                    />
+
+                    <InputError className="mt-2" message={errors.phone} />
                 </div>
 
                 <div>
@@ -62,7 +97,7 @@ export default function UpdateProfileInformation({ mustVerifyEmail, status, clas
                     <InputError className="mt-2" message={errors.email} />
                 </div>
 
-                {mustVerifyEmail && user.email_verified_at === null && (
+                {mustVerifyEmail && (
                     <div>
                         <p className="text-sm mt-2 text-gray-800">
                             Your email address is unverified.

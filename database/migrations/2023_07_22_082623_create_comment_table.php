@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('comment', function (Blueprint $table) {
-            $table->integer('id')->primary();//id默认递增
+            $table->integer('id')->autoIncrement();//id默认递增
             $table->text('content');
             $table->integer('commenter');
             $table->integer('Blog_Content_ID')->unique();
