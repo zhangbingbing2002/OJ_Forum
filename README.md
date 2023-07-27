@@ -8,13 +8,13 @@
 
 ## 注册界面
 
-![Screenshot from 2023-07-27 01-35-37](/home/saisai/Documents/study/Laraver_study/Forum/public/images/Screenshot from 2023-07-27 01-35-37.png)
+![Screenshot from 2023-07-27 01-35-37](/public/images/Screenshot from 2023-07-27 01-35-37.png)
 
 
 
 ## 主页
 
-![Screenshot from 2023-07-27 01-35-49](/home/saisai/Documents/study/Laraver_study/Forum/public/images/Screenshot from 2023-07-27 01-35-49.png)
+![Screenshot from 2023-07-27 01-35-49](Forum/public/images/Screenshot from 2023-07-27 01-35-49.png)
 
 
 
