@@ -8,18 +8,18 @@
 
 ## 注册界面
 
-![Screenshot from 2023-07-27 01-35-37](/public/images/Screenshot from 2023-07-27 01-35-37.png)
+![Screenshot from 2023-07-27 01-35-37](https://img1.imgtp.com/2023/07/27/4ukAr5U7.png)
 
 
 
 ## 主页
 
-![Screenshot from 2023-07-27 01-35-49](Forum/public/images/Screenshot from 2023-07-27 01-35-49.png)
+![Screenshot from 2023-07-27 01-35-49](https://img1.imgtp.com/2023/07/27/RD1c6Yoc.png)
 
 
 
 ## 个人信息
 
-![Screenshot from 2023-07-27 21-07-00](/home/saisai/Documents/study/Laraver_study/Forum/public/images/Screenshot from 2023-07-27 21-07-00.png)
+![Screenshot from 2023-07-27 21-07-00](https://img1.imgtp.com/2023/07/27/OiyZ7P3z.png)
 
-![Screenshot from 2023-07-27 01-36-10](/home/saisai/Documents/study/Laraver_study/Forum/public/images/Screenshot from 2023-07-27 01-36-10.png)
+![Screenshot from 2023-07-27 01-36-10](https://img1.imgtp.com/2023/07/27/EhpMSun1.png)
