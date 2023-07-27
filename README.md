@@ -4,7 +4,7 @@
 
 ## 登录界面
 
-![Screenshot from 2023-07-27 01-34-21](public/images/Screenshot from 2023-07-27 01-34-21.png)
+![Screenshot from 2023-07-27 01-34-21](https://img1.imgtp.com/2023/07/27/ZJfo2WZ0.png)
 
 ## 注册界面
 
