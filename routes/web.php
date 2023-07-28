@@ -31,6 +31,11 @@ Route::get('/index1', function () {
 })->middleware(['auth', 'verified'])->name('index1');
 
 
+Route::get('/push1', function () {
+    return Inertia::render('push1');
+})->middleware(['auth', 'verified'])->name('push1');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

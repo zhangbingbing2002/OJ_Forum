@@ -25,6 +25,11 @@ export default function Authenticated({ user, header, children }) {
                                     动态
                                 </NavLink>
                             </div>
+                            <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink href={route('push1')} active={route().current('push1')}>
+                                    发帖子
+                                </NavLink>
+                            </div>
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
